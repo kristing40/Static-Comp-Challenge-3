@@ -1,12 +1,116 @@
 <!Doctype html>
-<head>
-<title>Static Comp 3</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<link href="normalize.css" rel="stylesheet" type="text/css"/>
-<link href="main.css" rel="stylesheet" type="text/css"/>
-</head>
-<body>
 
+<head>
+  <title>KG Static Comp 3</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section id="wrapper">
+    <aside>
+      <section id="avatar-section">
+        <figure>
+          <img src="images/avatar.jpeg" id="avatar" alt="avatar image" />
+          <figcaption>Avatar</figcaption>
+        </figure>
+      </section><!--End Avatar Section-->
+
+      <section id="aside-content-section">
+        <section id="aside-section1" class="aside-category">
+          <h5>Main</h5>
+          <p class=""><img class="aside-icon" src="images/home.svg" alt="home icon">home</p>
+          <p class=""><img class="aside-icon" src="images/jobs.svg" alt="jobs icon">jobs</p>
+          <p class=""><img class="aside-icon" src="images/resume.svg" alt="resumes icon">resumes</p>
+          <p class=""><img class="aside-icon" src="images/ice-blue-task.svg" alt="task icon">tasks</p>
+          <p class=""><img class="aside-icon" src="images/ice-blue-calendar.svg" alt="calendar icon">calendar</p>
+        </section>
+        <section id="aside-section2" class="aside-category">
+          <h5>Admin</h5>
+          <p class=""><img class="aside-icon" src="images/user.svg" alt="user icon" align="bottom">users</p>
+          <p class=""><img class="aside-icon" src="images/location.svg" alt="location icon">locations</p>
+          <p class=""><img class="aside-icon" src="images/workflow.svg" alt="workflow icon">workflows</p>
+          <p class=""><img class="aside-icon" src="images/job-board.svg" alt="job board icon">job boards</p>
+          <p class=""><img class="aside-icon aside-social" src="images/social.svg" alt="social icon">social</p>
+        </section>
+        <section id="aside-section3" class="aside-category">
+          <h5>Categories</h5>
+          <p class=""><img class="aside-icon" src="images/yellow-sq.svg" alt="yellow square">Administrative</p>
+          <p class=""><img class="aside-icon" src="images/blue-sq.svg" alt="blue  square">Design</p>
+          <p class=""><img class="aside-icon" src="images/red-sq.svg" alt="red square">Executive</p>
+          <p class=""><img class="aside-icon" src="images/green-sq.svg" alt="green square">Human resources</p>
+        </section>
+      </section><!--End Aside Content Section-->
+    </aside>
+    <section id="collapsed-nav">
+      <img src="images/list.svg" alt="list icon" class="collapsed-nav-icon" />
+      <img src="images/phone.svg" alt="phone icon" class="collapsed-nav-icon" />
+      <img src="images/calendar.svg" alt="calendar icon" class="collapsed-nav-icon" />
+    </section><!--End Collapsed Nav-->
+    <main>
+      <nav id="expanded-nav">
+      </nav><!--End Nav-->
+
+      <section id="job-title-section">
+        <section class="job-title-n-location">
+          <h3>Customer Service Representative</h3>
+          <p>San Francisco, CA <span>. Preview this post</span></p>
+        </section><!--End Job Title Section nav-->
+        <nav class="job-title-section-nav">
+          <ul>
+            <a>summary</a>
+            <a>applicants</a>
+            <a>job board</a>
+            <a>interviews</a>
+            <a>activity</a>
+            <a>broadcasts</a>
+            <a>notifications</a>
+          </ul>
+        </nav>
+      </section><!--Job Title Section-->
+
+      <section id="graphs-section">
+        <section id="circle-graph-and-txt">
+          <section class="circle-graphs-section">
+            <div class="circle-graphs circle-graph-1">
+              <div class="circle-txt-group">3,154<span class="in-circle-sm-txt">applicants</span>
+              </div>
+            </div>
+            <div class="circle-graphs circle-graph-2">
+              <div class="circle-txt-group">1,546<span class="in-circle-sm-txt">interviews</span>
+              </div>
+            </div>
+            <div class="circle-graphs circle-graph-3">
+              <div class="circle-txt-group">912<span class="in-circle-sm-txt">forwards</span>
+              </div>
+            </div>
+          </section>
+          <section class="graph-btn">
+            <button class="graph-btn-txt graph-txt"><span>totals</span> Out of 5,612</button>
+          </section>
+        </section>
+        <section id="bar-graph-and-txt">
+          <section class="bar-graph-section">
+            <img src="images/bar-chart.png" class="bar-graph-img" />
+          </section>
+          <section class="graph-btn">
+            <button class="graph-btn-txt graph-txt">applicants day</button>
+          </section>
+        </section>
+      </section><!--End Graphs-->
+
+      <section id="resume-social-media-section">
+        Resume and Social Media Section
+      </section><!--End Resume & Social Media Section-->
+      <footer>
+        <img src="images/facebook.svg" alt="facebook icon" class="footer-icon" />
+        <img src="images/twitter.svg" alt="twitter icon" class="footer-icon" />
+        <img src="images/linkedin.svg" alt="linkedin icon" class="footer-icon" />
+      </footer><!--End footer-->
+    </main><!--End Main-->
+  </section><!--End Wrapper-->
 </body>
+
 </html>
