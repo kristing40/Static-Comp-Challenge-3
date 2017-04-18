@@ -61,6 +61,7 @@ figcaption {
 
   #aside-content-section {
     width: 100%;
+    padding-left: 40px;
   }
 
 
@@ -88,7 +89,8 @@ figcaption {
   }
 
   #aside-section3 p {
-    font-size: 70%;
+    font-size: 80%;
+    line-height: 2;
   }
 
 /** MAIN SECTION **/
@@ -211,8 +213,8 @@ background-position: center;
   margin-top: -42px;
 }
 
-.job-title-oblong-button,
-.job-title-section-sub-nav-button {
+.job-title-oblong-btn,
+.job-title-section-sub-nav-btn {
   margin-right: 10px;
   display: inline-block;
   padding: 5px;
@@ -220,13 +222,13 @@ background-position: center;
   border-style:solid;
 }
 
-.job-title-oblong-button {
+.job-title-oblong-btn {
   border-radius: 25px;
   width: 82px;
   padding: 3px;
 }
 
-.job-title-section-sub-nav-button {
+.job-title-section-sub-nav-btn {
   border-radius: 50%;
 }
 
@@ -402,8 +404,6 @@ tr:not(:last-child) {
     border-bottom: 1px solid #D3D3D3;
 }
 
-
-
 #social-section {
   height: 550px;
   width: 360px;
@@ -411,15 +411,27 @@ tr:not(:last-child) {
   margin-right: 40px;
 }
 
-.social-widget-button,
-.social-media-button {
-  height: 50px;
+.social-media-btn,
+.social-widget-input {
   width: 100%;
 }
 
-.social-media-button {
+
+
+.social-widget-input,
+.input-copy-btn {
+  height: 50px;
   margin-bottom: 10px;
+}
+
+.social-media-btn,
+.input-copy-btn  {
   border-style: none;
+}
+
+.social-media-btn {
+  height: 50px;
+  margin-bottom: 20px;
   color: #fff;
   background-repeat: no-repeat;
   background-size: 25px;
@@ -446,10 +458,20 @@ tr:not(:last-child) {
   width: 100%;
 }
 
+.widget-input-btn-div {
+  display: flex;
+}
+
 .social-widget {
  min-height: 150px;
  width: 100%;
  text-align: left;
+}
+
+.input-copy-btn {
+  width: 70px;
+  color: #FFF;
+  background-color: #2FAA96;
 }
 
 /** IMAGES AND ICONS **/
