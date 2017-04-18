@@ -45,8 +45,8 @@ aside,
 #resume-social-media-section,
 footer {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  /*justify-content: center;
+  align-content: center;*/
   width: 100%;
 }
 
@@ -112,8 +112,8 @@ footer {
 /** IMAGES AND ICONS **/
 
 #avatar {
-  height: 110px;
-  width: 110px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   margin-top: 30px;
 }
@@ -141,7 +141,7 @@ footer {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 10px solid black;
 }
 
 .bar-graph-img {
@@ -169,25 +169,77 @@ footer {
   margin-right: 5px;
 }
 
+.round-avatar-icon {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+
 /** MEDIA QUERIES **/
 
 @media screen and (min-width: 600px) {
+  /** MAIN SECTION **/
   #collapsed-nav {
     display: none;
   }
 
   #expanded-nav {
-    display: block;
-    min-height: 6%;
+    display: flex;
+    min-height: 60px;
     width: 100%;
     border-bottom: 1px inset #BEBEBE;
     background-color: #fff;
   }
 
+  .all-expanded-nav-boxes {
+    width: 60px;
+    border-right: 1px solid gray;
+  }
+
+  .exp-nav-box1 {
+    background-image: url(images/menu.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+}
+
+.exp-nav-box2 {
+  flex: 1;
+}
+
+.nav-input-field {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  background-image: url(images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 10px;
+  border-style: none;
+}
+
+.exp-nav-box3 {
+  background-image: url(images/userPlus.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  background-color: #0BB5FF;
+}
+.exp-nav-box4 {
+  background-image: url(images/nav-calendar.svg);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+}
+.exp-nav-box5 {
+  background-image: url(images/dot-menu.svg);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+}
   #job-title-section,
   #graphs-section,
   #resume-social-media-section {
-    min-height: 150px;
     border-bottom: 1px inset #BEBEBE;
   }
 }
@@ -203,7 +255,7 @@ footer {
 
 /** ASIDE CONTENT SECTION **/
   #avatar-section {
-    height: 25%;
+   height: 170px;;
   }
 
   figure{
@@ -216,7 +268,6 @@ footer {
   }
 
   .aside-category {
-    min-height: 180px;
     display: block;
     border-bottom: 2px inset #1a2b4d;
   }
@@ -235,12 +286,9 @@ footer {
 
   #aside-content-section {
     width: 100%;
-    min-height: 150px;
     display: block;
     padding-left: 30px;
   }
-
-/** MAIN SECTION **/
 
   main,
   #job-title-section,
@@ -248,8 +296,6 @@ footer {
   #resume-social-media-section {
   min-width: 85%;
   }
-
-/** MAIN NAVIGATION **/
 
 /** JOB TITLE SECTION **/
 
@@ -261,7 +307,7 @@ footer {
 
 .job-title-n-location {
   height: 90px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .job-title-n-location h3 {
@@ -283,10 +329,10 @@ footer {
 }
 
 .job-title-section-nav a{
-  color:#8C8C8C;
-  padding-right: 30px;
-  padding-bottom: 12px;
-}
+  color: #8C8C8C;
+  margin-right: 30px;
+  padding-bottom: 7px;
+  }
 
 .job-title-section-nav a:hover {
   color: #3D3D3D;
@@ -296,6 +342,7 @@ footer {
 .job-title-location-blue-txt {
   color: #63D1F4;
 }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -333,7 +380,6 @@ footer {
 
 
 /** GRAPH SECTION **/
-
 .graph-btn{
   text-align: center;
 }
@@ -374,17 +420,14 @@ footer {
 
 .circle-graph-1 {
   border-color: #4EB8BF #4EB8BF #C4C4C4 #4EB8BF;
-  border-width: 10px;
 }
 
 .circle-graph-2 {
   border-color:#C4C4C4 #C4C4C4 #4E74C7 #4E74C7 ;
-  border-width: 10px;
 }
 
 .circle-graph-3 {
   border-color:  #C4C4C4 #C4C4C4 #813A8E #C4C4C4 ;
-  border-width: 10px;
 }
 
 .circle-txt-group{
@@ -406,7 +449,55 @@ footer {
 /** RESUME SECTION **/
 
 #resume-social-media-section {
-  min-height: 50%;
+}
+
+table {
+  margin: 40px;
+  height: 550px;
+  width: 600px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+thead {
+  height: 30px;
+  background-color: #9a9a9a;
+  color: #fff;
+}
+
+tr {
+  border-bottom: 1px solid #D3D3D3;
+}
+
+.social-section {
+  height: 550px;
+  width: 360px;
+  margin-top: 40px;
+  margin-right: 40px;
+  border: 1px solid blue;
+}
+
+.social-media-links {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.social-section p {
+  margin: 0;
+}
+
+.facebook {
+  background-color: #3B5998;
+}
+
+.twitter {
+  background-color:#28A4E8;
+}
+
+.linkedin {
+  background-color:#0077B5;
 }
 
 /** FOOTER **/
