@@ -1,54 +1,60 @@
 <!Doctype html>
+
 <head>
   <title>KG Static Comp 3</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="normalize.css" rel="stylesheet" type="text/css" />
-  <link href="main2.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
   <section id="wrapper">
     <aside>
       <section id="avatar-section">
         <figure>
           <img src="images/avatar.jpeg" id="avatar" alt="avatar image" />
-          <figcaption>Lina Stina <img src="images/down-arrow.svg" class="x-sm-icon"></figcaption>
+          <figcaption>Lina Stina</figcaption>
         </figure>
       </section>
       <!--End Avatar Section-->
+
       <section id="aside-content-section">
         <section id="aside-section1" class="aside-category">
           <h4>Main</h4>
           <p class="aside-para"><img class="aside-icon" src="images/home.svg" alt="home icon">home</p>
           <p class="aside-para"><img class="aside-icon" src="images/jobs.svg" alt="jobs icon">jobs</p>
-          <p class="aside-para"><img class="aside-icon" src="images/jobs.svg" alt="resumes icon">resumes</p>
+          <p class="aside-para"><img class="aside-icon" src="images/resume.svg" alt="resumes icon">resumes</p>
           <p class="aside-para"><img class="aside-icon" src="images/ice-blue-task.svg" alt="task icon">tasks</p>
-          <p class="aside-para"><img class="aside-icon" src="images/calendar.svg" alt="calendar icon">calendar</p>
+          <p class="aside-para"><img class="aside-icon" src="images/ice-blue-calendar.svg" alt="calendar icon">calendar</p>
         </section>
         <section id="aside-section2" class="aside-category">
           <h4>Admin</h4>
           <p class="aside-para"><img class="aside-icon" src="images/users.svg" alt="user icon" align="bottom">users</p>
-          <p class="aside-para"><img class="aside-icon" src="images/ice-blue-task.svg" alt="location icon">locations</p>
+          <p class="aside-para"><img class="aside-icon" src="images/locations.svg" alt="location icon">locations</p>
           <p class="aside-para"><img class="aside-icon" src="images/workflow.svg" alt="workflow icon">workflows</p>
           <p class="aside-para"><img class="aside-icon" src="images/job-board.svg" alt="job board icon">job boards</p>
           <p class="aside-para"><img class="aside-icon aside-social" src="images/social.svg" alt="social icon">social</p>
         </section>
         <section id="aside-section3" class="aside-category">
           <h4>Categories</h4>
-          <p><img class="aside-icon" src="images/yellow-sq.svg" alt="yellow square">Administrative</p>
-          <p><img class="aside-icon" src="images/blue-sq.svg" alt="blue square">Design</p>
-          <p><img class="aside-icon" src="images/red-sq.svg" alt="red square">Executive</p>
-          <p><img class="aside-icon" src="images/green-sq.svg" alt="green square">Human resources</p>
+          <p class="aside-para"><img class="aside-icon" src="images/yellow-sq.svg" alt="yellow square">Administrative</p>
+          <p class="aside-para"><img class="aside-icon" src="images/blue-sq.svg" alt="blue square">Design</p>
+          <p class="aside-para"><img class="aside-icon" src="images/red-sq.svg" alt="red square">Executive</p>
+          <p class="aside-para"><img class="aside-icon" src="images/green-sq.svg" alt="green square">Human resources</p>
         </section>
       </section>
       <!--End Aside Content Section-->
     </aside>
+    <section id="collapsed-nav">
+      <img src="images/list.svg" alt="list icon" class="collapsed-nav-icon" />
+      <img src="images/phone.svg" alt="phone icon" class="collapsed-nav-icon" />
+      <img src="images/calendar.svg" alt="calendar icon" class="collapsed-nav-icon" />
+    </section>
+    <!--End Collapsed Nav-->
     <main>
       <nav id="expanded-nav">
-        <section class="all-expanded-nav-boxes exp-nav-box1">
-          <img src="images/blue-triangle.svg" alt="blue triangle" class="blue-triangle-icon">
-        </section>
+        <section class="all-expanded-nav-boxes exp-nav-box1"></section>
         <section class="all-expanded-nav-boxes exp-nav-box2">
           <input class="nav-input-field" type="text" placeholder="Search for a job task or resume"/>
         </section>
@@ -57,15 +63,16 @@
         <section class="all-expanded-nav-boxes exp-nav-box5"></section>
       </nav>
       <!--End Nav-->
+
       <section id="job-title-section">
         <section class="job-title-n-location">
           <h3>Customer Service Representative</h3>
           <p class="job-title-location-para"><img src="images/location0.svg" class="location-sm-icon sm-icon" />San Francisco, CA <img src="images/circle-gray.svg" class="x-sm-dot-icon" /> <span class="job-title-location-blue-txt">Preview this post</span></p>
           <section class="job-title-section-sub-nav clearfix">
-            <button class="job-title-oblong-btn"><img src="images/green-circle.svg" class="green-dot-icon">open</buton>
-            <button class="job-title-section-sub-nav-btn"><img src="images/badge.svg" class="sm-icon job-title-sub-nav-icon"></button>
-            <button class="job-title-section-sub-nav-btn"><img src="images/pen.svg" class="sm-icon job-title-sub-nav-icon"></button>
-            <button class="job-title-section-sub-nav-btn"><img src="images/rocket.svg" class="sm-icon job-title-sub-nav-icon"></button>
+            <button class="job-title-oblong-button"><img src="images/green-circle.svg" class="green-dot-icon">open</button>
+            <button class="job-title-section-sub-nav-button"><img src="images/twoheads.svg" class="sm-icon job-title-sub-nav-icon"></button>
+            <button class="job-title-section-sub-nav-button"><img src="images/pen.svg" class="sm-icon job-title-sub-nav-icon"></button>
+            <button class="job-title-section-sub-nav-button"><img src="images/rocket.svg" class="sm-icon job-title-sub-nav-icon"></button>
           </section>
           <nav class="job-title-section-nav">
             <ul>
@@ -81,6 +88,7 @@
         </section>
       </section>
       <!--End Job Title Section-->
+
       <section id="graphs-section">
         <section id="circle-graph-and-txt">
           <section class="circle-graphs-section">
@@ -98,7 +106,7 @@
             </div>
           </section>
           <section class="graph-btn">
-            <button class="graph-btn-txt graph-txt"><span>totals <img src="images/circle-gray.svg" class="x-sm-dot-icon" /></span> Out of 5,612</button>
+            <button class="graph-btn-txt graph-txt"><span>totals</span> Out of 5,612</button>
           </section>
         </section>
         <section id="bar-graph-and-txt">
@@ -106,25 +114,20 @@
             <img src="images/bar-chart.png" class="bar-graph-img" />
           </section>
           <section class="graph-btn">
-            <button class="graph-btn-txt graph-txt">applicants &frasl; day</button>
+            <button class="graph-btn-txt graph-txt">applicants day</button>
           </section>
         </section>
       </section>
+
       <!--End Graphs-->
-      <section class="bottom-line-with-image-divider">
-        <span class="divider">
-            <img src="images/recycle-arrows.svg" class="divider-icon" alt="recycle icon"/>
-        </span>
-      </section><!--End divider-image-->
+
       <section id="resume-social-media-section">
         <section class="resume">
           <table>
             <thead>
               <tr>
-                <th class="th-font">job description</th>
-                <th class="resume-edit-txt th-font">
-                  <button class="resume-edit-btn"><img src="images/pencil.svg" class="sm-icon resume-pencil-icon       ">edit</button>
-                </th>
+                <th>job description</th>
+                <th>edit</th>
               </tr>
             </thead>
             <tr>
@@ -144,7 +147,7 @@
               <td>Mid-level</td>
             </tr>
             <tr>
-              <th>status</td>
+              <th>Status</td>
               <td>Open</td>
             </tr>
             <tr>
@@ -161,42 +164,38 @@
             </tr>
           </table>
         </section>
-        <section id="social-section">
-          <section class="btns-social">
-            <button class="social-media-btn facebook">Post to Facebook</button>
-            <button class="social-media-btn twitter">Tweet this Job</button>
-            <button class="social-media-btn linkedin">Post to linkedin</button>
-          </section>
-            <section id="social-widget-section">
-              <article class="social-widget">
-                <h4><img src="images/grid.svg" class="social-widget-icon-img" alt="upload icon"> Link to this Job</h4>
-                <p>Fleeing from the Cylon the Battlestar Galactica leads a rag-tag fugitive fleet on a lonely quest. </p>
-                <div class="widget-input-btn-div">
-                  <input class="social-widget-input" placeholder="http://loremipsum.com/sit.amet/123456/abc">
-                  <button class="input-copy-btn">Copy</button>
-                </div>
-              </article>
-              <article class="social-widget">
-                <h4><img src="images/widget-btn.svg" class="social-widget-icon-img" alt="widget icon">  Use the button Widget</h4>
-                <p>This widget embeds the btns for sharing a job for submitting a resume on your website. </p>
-                <div class="widget-input-btn-div">
-                  <input class="social-widget-input" placeholder='<script src="main.js" type="text/javascript">'/>
-                  <button class="input-copy-btn">Copy</button>
-                </div>
-              </article>
-              <article class="social-widget">
-                <h4><img src="images/upload.svg" class="social-widget-icon-img" alt="upload icon"> Upload Resumes by Email</h4>
-                <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-                <div class="widget-input-btn-div">
-                  <input class="social-widget-input" placeholder="linaStina@gmail.com">
-                  <button class="input-copy-btn">Copy</button>
-                </div>
-              </article>
-          </section>
-        </section><!--End Social Section-->
-      </section><!--End Resume & Social Media Section-->
-    </main><!--End Main-->
-  </section><!--End Wrapper-->
+        <section class="social-section">
+          <article class="social social-media-links facebook">
+            <p>Post to Facebook</p>
+          </article>
+          <article class="social social-media-links twitter">
+            <p>Tweet this job</p>
+          </article>
+          <article class="social social-media-links linkedin">
+            <p>Post to Linkedin</p>
+          </article>
+          <article class="social">
+            <h4>Link to this Job</h4>
+          </article>
+          <article class="social">
+            <h4>Use the Button Widget</h4>
+          </article>
+          <article class="social">
+            <h4>Upload Resumes by Email</h4>
+          </article>
+        </section>
+      </section>
+      <!--End Resume & Social Media Section-->
+      <footer>
+        <img src="images/facebook.svg" alt="facebook icon" class="footer-icon" />
+        <img src="images/twitter.svg" alt="twitter icon" class="footer-icon" />
+        <img src="images/linkedin.svg" alt="linkedin icon" class="footer-icon" />
+      </footer>
+      <!--End footer-->
+    </main>
+    <!--End Main-->
+  </section>
+  <!--End Wrapper-->
 </body>
 
 </html>
