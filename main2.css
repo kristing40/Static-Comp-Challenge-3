@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 #wrapper {
   display: flex;
   height: 100%;
@@ -14,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
@@ -27,7 +27,6 @@ aside {
 
 aside {
   background-color: #1a344d;
-  color: #B7C3D0;
 }
 
 aside,
@@ -37,6 +36,11 @@ aside,
 #resume-social-media-section {
   display: flex;
   width: 100%;
+}
+
+aside,
+figcaption {
+  color: #B7C3D0;
 }
 
 #avatar-section {
@@ -57,11 +61,11 @@ figure,
 
 figcaption {
   text-align: center;
+  font-size: 80%;
 }
 
   #aside-content-section {
     width: 100%;
-    padding-left: 40px;
   }
 
 
@@ -71,26 +75,30 @@ figcaption {
   }
 
   .aside-category {
-    width: 80%;
+    width: 100%;
     vertical-align: middle;
-    padding: 20px 0;
+    padding: 20px 30px;
   }
 
   .aside-category h4 {
-    font-size: 80%;
+    font-size: 70%;
   }
 
   .aside-para {
     font-variant: small-caps;
   }
 
-  .aside-para:hover {
+ .aside-para:hover {
     color: #fff;
   }
 
   #aside-section3 p {
     font-size: 80%;
     line-height: 2;
+  }
+
+  #aside-section3 p:hover {
+    color: #fff;
   }
 
 /** MAIN SECTION **/
@@ -131,6 +139,11 @@ background-repeat: no-repeat;
 background-size: 25px;
 background-position: 10px;
 border-style: none;
+}
+
+input[type="text"].nav-input-field::-webkit-input-placeholder {
+  color: #c8cfd6;
+;
 }
 
 .exp-nav-box3 {
@@ -208,8 +221,8 @@ background-position: center;
 
 .job-title-section-sub-nav {
   float: right;
-  width: 225px;
-  margin-right: -296px;
+  width: 240px;
+  margin-right: -298px;
   margin-top: -42px;
 }
 
@@ -225,11 +238,14 @@ background-position: center;
 .job-title-oblong-btn {
   border-radius: 25px;
   width: 82px;
-  padding: 3px;
+  padding: 7px;
 }
 
 .job-title-section-sub-nav-btn {
   border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
 }
 
 .job-title-sub-nav-icon {
@@ -241,8 +257,7 @@ background-position: center;
 }
 
 #job-title-section,
-#resume-social-media-section,
-.social-widget {
+#resume-social-media-section{
   border-bottom: 1px inset #D7E4EA;
 }
 
@@ -261,7 +276,7 @@ span.divider:after {
   display: inline-block;
   margin: 0 0 3px 0px;
   height: 2px;
-  width: 40%;
+  width: 43%;
   content: " ";
   text-shadow: none;
   background-color: #D7E4EA;
@@ -271,7 +286,7 @@ span.divider:before {
   display: inline-block;
   margin: 0 0px 3px 0;
   height: 2px;
-  width: 40%;
+  width: 46%;
   content: " ";
   text-shadow: none;
   background-color: #D7E4EA;
@@ -298,6 +313,7 @@ span.divider:before {
   text-align: center;
   font-variant: small-caps;
   font-size:85%;
+  border-color: #D7E4EA;
 }
 
 .circle-graphs-section,
@@ -331,15 +347,15 @@ span.divider:before {
 }
 
 .circle-graph-1 {
-  border-color: #4EB8BF #4EB8BF #C4C4C4 #4EB8BF;
+  border-color: #4EB8BF #4EB8BF #D7E4EA #4EB8BF;
 }
 
 .circle-graph-2 {
-  border-color:#C4C4C4 #C4C4C4 #4E74C7 #4E74C7 ;
+  border-color: #D7E4EA #D7E4EA #4E74C7 #4E74C7;
 }
 
 .circle-graph-3 {
-  border-color:  #C4C4C4 #C4C4C4 #813A8E #C4C4C4 ;
+  border-color:  #D7E4EA #D7E4EA #813A8E #D7E4EA;
 }
 
 .circle-txt-group{
@@ -366,12 +382,13 @@ span.divider:before {
 /** RESUME SECTION **/
 
 #resume-social-media-section {
+
 }
 
 table {
   margin: 40px;
   height: 550px;
-  width: 600px;
+  max-width: 700px;
   padding: 10px;
   border-collapse: collapse;
   background-color: #fff;
@@ -381,6 +398,14 @@ th {
   min-width: 170px;
   color: #778899;
   text-align: left;
+}
+
+thead,
+th,
+.resume-edit-btn {
+  font-variant: small-caps;
+  font-weight: 700px;
+  font-size: 20px;
 }
 
 thead,
@@ -396,7 +421,7 @@ thead {
 tr {
   display: flex;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 27px 0;
   width: 90%;
 }
 
@@ -404,9 +429,24 @@ tr:not(:last-child) {
     border-bottom: 1px solid #D3D3D3;
 }
 
+.resume-edit-btn {
+  height: 30px;
+  width: 70px;
+  background-color: #929fad;
+  vertical-align: top;
+  margin-top: -5px;
+  border-style: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.resume-pencil-icon {
+  margin-right: 4px;
+}
+
 #social-section {
   height: 550px;
-  width: 360px;
+  width: 330px;
   margin-top: 40px;
   margin-right: 40px;
 }
@@ -416,12 +456,20 @@ tr:not(:last-child) {
   width: 100%;
 }
 
-
-
+.social-media-btn,
 .social-widget-input,
 .input-copy-btn {
-  height: 50px;
-  margin-bottom: 10px;
+  height: 48px;
+}
+
+.social-widget-input {
+  text-align: center;
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 80%;
+  padding-left: 15px;
 }
 
 .social-media-btn,
@@ -430,8 +478,8 @@ tr:not(:last-child) {
 }
 
 .social-media-btn {
-  height: 50px;
-  margin-bottom: 20px;
+  /*height: 50px;*/
+  margin-bottom: 15px;
   color: #fff;
   background-repeat: no-repeat;
   background-size: 25px;
@@ -454,18 +502,39 @@ tr:not(:last-child) {
   background-image: url(images/linkedin.svg);
 }
 
+.btns-social {
+  height: 35%;
+}
+
 #social-widget-section {
   width: 100%;
+  height: 65%;
 }
 
 .widget-input-btn-div {
   display: flex;
+  margin-bottom: 30px;
 }
 
 .social-widget {
- min-height: 150px;
  width: 100%;
+ padding: 7px;
  text-align: left;
+}
+
+.social-widget p {
+  font-size: 80%;
+  line-height: 2;
+}
+
+.social-widget:not(:last-child) {
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.social-widget-icon-img {
+  height: 13px;
+  width: 13px;
+  margin-right: 3px;
 }
 
 .input-copy-btn {
@@ -513,6 +582,7 @@ tr:not(:last-child) {
 .sm-icon {
   height: 14px;
   width: 14px;
+  vertical-align: middle;
 }
 
 .divider-icon {
@@ -527,6 +597,13 @@ tr:not(:last-child) {
   margin-right: 5px;
 }
 
+.blue-triangle-icon {
+  height: 8px;
+  width: 8px;
+  transform: scaleX(-1);
+  margin: 25px 0 0 8px;
+}
+
 .round-avatar-icon {
   height: 55px;
   width: 55px;
@@ -536,4 +613,25 @@ tr:not(:last-child) {
 .social-media-icon {
   height: 30px;
   width: 30px;
+}
+
+/**MEDIA QUERIES**/
+@media screen and (min-width: 320px) {
+  aside{
+    display: none
+  }
+
+}
+
+@media screen and (min-width: 450px) {
+
+}
+
+@media screen and (min-width: 600px) {
+  aside{
+    display: block;
+  }
+}
+@media screen and (min-width: 750px) {
+
 }
