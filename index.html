@@ -7,16 +7,15 @@
   <link href="main.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 </head>
-<body>
-  <section id="wrapper">
+<body id="wrapper">
     <aside>
-      <div id="avatar-section">
+      <section id="avatar-section">
         <figure>
           <img src="images/avatar.jpeg" id="avatar" alt="avatar image" />
-          <figcaption>Lina Stina <img src="images/down-arrow.svg" class="x-sm-icon"></figcaption>
+          <figcaption>Lina Stina<a id="avatar-link" href="#"><img src="images/down-arrow.svg" class="x-sm-icon"></a>
+          </figcaption>
         </figure>
-      </div><!--End Avatar Section-->
-      <section id="aside-content-section">
+      </section><!--End Avatar Section-->
         <div id="aside-section1" class="aside-category-links">
           <h4>Main</h4>
           <ul>
@@ -74,34 +73,139 @@
             </li>
           </ul>
         </div>
-      </section><!--End Aside Content Section-->
+
     </aside>
     <main>
       <nav id="expanded-nav">
-        <div class="all-expanded-nav-boxes exp-nav-box1">
-          <img src="images/blue-triangle.svg" alt="blue triangle" class="blue-triangle-icon">
+        <div class="all-expanded-nav-boxes exp-nav-box1" role="contains blue arrow to indicate more">
+          <!-- <img src="images/blue-triangle.svg" alt="blue triangle" class="blue-triangle-icon"/> -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 24 24" enable-background="new 0 0 24 24" width="25px" height="25px">
+            <g>
+              <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z" fill="#737373" class="svg-hover"/>
+              <path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z" fill="#737373" class="svg-hover"/>
+              <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z" fill="#737373" class="svg-hover"/>
+            </g>
+          </svg>
         </div>
-        <div class="exp-nav-box2">
+        <div class="all-expanded-nav-boxes exp-nav-box2" role="search field">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="25px" height="25px">
+          <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" fill="#87898a" class="svg-hover search-img"/>
+          <g>
+          </g>
+          </svg> -->
           <input class="nav-input-field" type="text" placeholder="Search for a job task or resume" />
         </div>
-        <div class="all-expanded-nav-boxes exp-nav-box3"></div>
-        <div class="all-expanded-nav-boxes exp-nav-box4"></div>
-        <div class="all-expanded-nav-boxes exp-nav-box5"></div>
+        <div class="all-expanded-nav-boxes exp-nav-box3" role="main-nav">
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 37.644 37.644" style="enable-background:new 0 0 37.644 37.644;" xml:space="preserve">
+          <g>
+          	<path d="M37.644,5.957c0,0.829-0.672,1.5-1.5,1.5h-2.118v2.119c0,0.829-0.672,1.5-1.5,1.5s-1.5-0.671-1.5-1.5V7.457h-2.119   c-0.828,0-1.5-0.671-1.5-1.5c0-0.829,0.672-1.5,1.5-1.5h2.119V2.339c0-0.829,0.672-1.5,1.5-1.5s1.5,0.671,1.5,1.5v2.118h2.118   C36.972,4.457,37.644,5.129,37.644,5.957z M33.246,28.093l-10.557-3.299c2.28-2.717,3.668-7.024,3.668-11.055   C26.357,7.64,22.88,3.7,17.502,3.7c-5.38,0-8.857,3.94-8.857,10.039c0,4.03,1.387,8.338,3.669,11.055L1.756,28.093   C0.711,28.419,0,29.384,0,30.48v3.824c0,1.383,1.119,2.5,2.5,2.5h30.002c1.381,0,2.5-1.117,2.5-2.5V30.48   C35.002,29.386,34.291,28.42,33.246,28.093z" fill="#FFFFFF" class="svg-hover"/>
+          </g>
+          </svg>
+        </div>
+        <div class="all-expanded-nav-boxes exp-nav-box4" role="main-nav">
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 361.77 361.77" style="enable-background:new 0 0 361.77 361.77;" xml:space="preserve">
+          <g>
+          	<g>
+          		<g>
+          			<path d="M323.885,43.77h-27.5V25c0-13.807-11.193-25-25-25h-1c-13.807,0-25,11.193-25,25v18.77h-129V25c0-13.807-11.193-25-25-25     h-1c-13.807,0-25,11.193-25,25v18.77h-27.5c-13.807,0-25,11.193-25,25v268c0,13.809,11.193,25,25,25h286     c13.807,0,25-11.191,25-25v-268C348.885,54.963,337.691,43.77,323.885,43.77z M306.885,322.27h-252v-203h252V322.27z" fill="#737373" class="svg-hover"/>
+          			<path d="M89.136,211.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4H89.136c-2.209,0-4,1.791-4,4v43.498     C85.136,209.343,86.927,211.134,89.136,211.134z" fill="#737373" class="svg-hover"/>
+          			<path d="M159.136,211.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4h-43.498c-2.209,0-4,1.791-4,4v43.498     C155.136,209.343,156.927,211.134,159.136,211.134z" fill="#737373" class="svg-hover"/>
+          			<path d="M229.136,211.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4h-43.498c-2.209,0-4,1.791-4,4v43.498     C225.136,209.343,226.927,211.134,229.136,211.134z" fill="#737373" class="svg-hover"/>
+          			<path d="M89.136,281.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4H89.136c-2.209,0-4,1.791-4,4v43.498     C85.136,279.343,86.927,281.134,89.136,281.134z" fill="#737373" class="svg-hover"/>
+          			<path d="M159.136,281.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4h-43.498c-2.209,0-4,1.791-4,4v43.498     C155.136,279.343,156.927,281.134,159.136,281.134z" fill="#737373" class="svg-hover"/>
+          			<path d="M229.136,281.134h43.498c2.209,0,4-1.791,4-4v-43.498c0-2.209-1.791-4-4-4h-43.498c-2.209,0-4,1.791-4,4v43.498     C225.136,279.343,226.927,281.134,229.136,281.134z" fill="#737373" class="svg-hover"/>
+          		</g>
+          	</g>
+          </g>
+        </svg>
+        </div>
+        <div class="all-expanded-nav-boxes exp-nav-box5" role="main-nav">
+          <?xml version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56 56" style="enable-background:new 0 0 56 56;" xml:space="preserve" width="25px" height="25px">
+          <g>
+          	<path d="M8,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,40,8,40z" fill="#737373" class="svg-hover"/>
+          	<path d="M28,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,40,28,40z" fill="#737373" class="svg-hover"/>
+          	<path d="M48,40c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,40,48,40z" fill="#737373" class="svg-hover"/>
+          	<path d="M8,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S12.411,20,8,20z" fill="#737373" class="svg-hover"/>
+          	<path d="M28,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,20,28,20z" fill="#737373" class="svg-hover"/>
+          	<path d="M48,20c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S52.411,20,48,20z" fill="#737373" class="svg-hover"/>
+          	<path d="M8,0C3.589,0,0,3.589,0,8s3.589,8,8,8s8-3.589,8-8S12.411,0,8,0z" fill="#737373" class="svg-hover"/>
+          	<path d="M28,0c-4.411,0-8,3.589-8,8s3.589,8,8,8s8-3.589,8-8S32.411,0,28,0z" fill="#737373" class="svg-hover"/>
+          	<path d="M48,16c4.411,0,8-3.589,8-8s-3.589-8-8-8s-8,3.589-8,8S43.589,16,48,16z" fill="#737373" class="svg-hover"/>
+          </g>
+          </svg>
+        </div>
       </nav><!--End Nav-->
       <section id="job-title-section">
-        <div class="job-title-header-section">
-          <div class="inner-job-title-box">
+        <div class="job-title-header-section" role="job title section">
+          <div class="inner-job-title-box" role="">
             <h1>Customer Service Representative</h1>
-            <p class="job-title-location-para"><img src="images/location0.svg" class="location-sm-icon sm-icon" />San Francisco, CA <img src="images/circle-gray.svg" class="x-sm-dot-icon" /> <span class="job-title-location-blue-txt">Preview this post</span></p>
+            <p class="job-title-location-para"><img src="images/location0.svg" class="location-sm-icon sm-icon" />San Francisco, CA <img src="images/circle-gray.svg" class="x-sm-dot-icon" /> <span><a href="#" class="job-title-location-blue-txt">Preview this post</a></span></p>
           </div>
-          <section class="job-title-section-sub-nav clearfix">
-            <button class="job-title-oblong-btn"><img src="images/green-circle.svg" class="green-dot-icon">open</buton>
-            <button class="job-title-section-sub-nav-btn"><img src="images/badge.svg" class="sm-icon job-title-sub-nav-icon"></button>
-            <button class="job-title-section-sub-nav-btn"><img src="images/pen.svg" class="sm-icon job-title-sub-nav-icon"></button>
-            <button class="job-title-section-sub-nav-btn"><img src="images/rocket.svg" class="sm-icon job-title-sub-nav-icon"></button>
+          <section class="job-title-section-sub-nav">
+            <button class="job-title-oblong-btn all-four-job-title-nav-btns"><img src="images/green-circle.svg" class="green-dot-icon">open</buton>
+            <button class="job-title-section-sub-nav-btn all-four-job-title-nav-btns">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="14px" height="14px" viewBox="0 0 459 459" style="enable-background:new 0 0 459 459;" xml:space="preserve">
+              <g>
+              	<g id="bookmark">
+              		<path d="M357,0H102C73.95,0,51,22.95,51,51v408l178.5-76.5L408,459V51C408,22.95,385.05,0,357,0z" fill="#a9aaab" class="svg-hover"/>
+              	</g>
+              </g>
+              </svg>
+            </button>
+            <button class="job-title-section-sub-nav-btn all-four-job-title-nav-btns">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 493.638 493.638" style="enable-background:new 0 0 493.638 493.638;" xml:space="preserve" width="14px" height="14px">
+              <g>
+              	<g>
+              		<g>
+              			<polygon points="427.092,118.538 99.89,445.738 90.239,436.086 417.439,108.885 358.708,50.154      31.376,377.481 116.022,462.13 443.351,134.798    " fill="#999c9e" class="svg-hover"/>
+              			<path d="M492.627,85.523c-10.064,23.448-43.053,43.053-43.053,43.053l-84.646-84.644     c0,0,27.29-33.513,43.054-43.053S502.692,62.074,492.627,85.523z" fill="#999c9e" class="svg-hover"/>
+              			<polygon points="110.059,468.088 0.127,493.638 25.413,383.447    " fill="#999c9e" class="svg-hover"/>
+              		</g>
+              	</g>
+              </svg>
+            </button>
+            <button class="job-title-section-sub-nav-btn all-four-job-title-nav-btns">
+              <?xml version="1.0" encoding="iso-8859-1"?>
+              <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="14px" height="14px">
+              <g>
+              	<g>
+              		<path d="M395.636,279.273h-23.273h-31.03v186.182v23.273V512h54.303c12.853,0,23.273-10.422,23.273-23.273V279.273H395.636z" fill="#747678" class="svg-hover"/>
+              	</g>
+              </g>
+              <g>
+              	<g>
+              		<polygon points="217.212,279.273 217.212,465.455 217.212,488.727 217.212,512 294.788,512 294.788,488.727 294.788,465.455     294.788,279.273   " fill="#747678" class="svg-hover"/>
+              	</g>
+              </g>
+              <g>
+              	<g>
+              		<path d="M139.636,279.273h-23.273H93.091v209.455c0,12.851,10.42,23.273,23.273,23.273h54.303v-23.273v-23.273V279.273H139.636z" fill="#747678" class="svg-hover"/>
+              	</g>
+              </g>
+              <g>
+              	<g>
+              		<path d="M442.182,186.182h-23.273v-69.818c0-12.853-10.42-23.273-23.273-23.273h-38.788V23.273C356.849,10.42,346.429,0,333.576,0    H178.424c-12.853,0-23.273,10.42-23.273,23.273v69.818h-38.788c-12.853,0-23.273,10.42-23.273,23.273v69.818H69.818    c-12.853,0-23.273,10.418-23.273,23.273c0,12.851,10.42,23.273,23.273,23.273h23.273h23.273h23.273h31.03h46.545h77.576h46.545    h31.03h23.273h23.273h23.273c12.853,0,23.273-10.422,23.273-23.273C465.455,196.6,455.035,186.182,442.182,186.182z     M310.303,93.091H201.697V46.545h108.606V93.091z" fill="#747678" class="svg-hover"/>
+              	</g>
+              </g>
+            </svg>
+            </button>
           </section>
         </div>
-        <nav class="job-title-section-nav">
+        <nav class="job-title-section-bottom-nav">
           <a>summary</a>
           <a>applicants</a>
           <a>job board</a>
@@ -110,43 +214,43 @@
           <a>broadcasts</a>
           <a>notifications</a>
         </nav>
-      </section><!--End Job Title Section-->
+      </section> <!--End Job Title Section-->
       <section id="graphs-section">
-        <div id="circle-graph-and-txt">
+        <div id="circle-graph-and-txt" role="">
           <div class="circle-graphs-section">
-            <div class="circle-graphs circle-graph-1">
-              <div class="circle-txt-group">3,154<span class="in-circle-sm-txt">applicants</span>
+            <div class="circle-graphs circle-graph-1" role="">
+              <div class="circle-txt-group">3,154<span class="in-circle-sm-txt" role="">applicants</span>
               </div>
             </div>
-            <div class="circle-graphs circle-graph-2">
-              <div class="circle-txt-group">1,546<span class="in-circle-sm-txt">interviews</span>
+            <div class="circle-graphs circle-graph-2" role="">
+              <div class="circle-txt-group" role="">1,546<span class="in-circle-sm-txt">interviews</span>
               </div>
             </div>
-            <div class="circle-graphs circle-graph-3">
-              <div class="circle-txt-group">912<span class="in-circle-sm-txt">forwards</span>
+            <div class="circle-graphs circle-graph-3" role="">
+              <div class="circle-txt-group" role="">912<span class="in-circle-sm-txt">forwards</span>
               </div>
             </div>
           </div>
-          <div class="graph-btn">
+          <div class="graph-btn" role="">
             <button class="graph-btn-txt graph-txt"><span>totals <img src="images/circle-gray.svg" class="x-sm-dot-icon" /></span> Out of 5,612</button>
           </div>
         </div>
         <section id="bar-graph-and-txt">
-          <div class="bar-graph-section">
+          <div class="bar-graph-section" role="">
             <img src="images/bar-chart.png" class="bar-graph-img" />
           </div>
-          <div class="graph-btn">
+          <div class="graph-btn" role="">
             <button class="graph-btn-txt graph-txt">applicants &frasl; day</button>
           </div>
         </section>
       </section> <!--End Graphs-->
       <section class="bottom-line-with-image-divider">
-        <span class="divider">
+        <span class="divider" role="">
             <img src="images/recycle-arrows.svg" class="divider-icon" alt="recycle icon"/>
         </span>
       </section><!--End divider-image-->
       <section id="resume-social-media-section">
-        <div class="resume">
+       <div class="resume" role="contains resume">
           <table>
             <thead>
               <tr>
@@ -191,16 +295,16 @@
           </table>
         </div>
         <section id="social-section">
-          <div class="btns-social">
+          <div class="btns-social" role="social media buttons section">
             <button class="social-media-btn facebook">Post to Facebook</button>
             <button class="social-media-btn twitter">Tweet this Job</button>
             <button class="social-media-btn linkedin">Post to linkedin</button>
           </div>
-          <section id="social-widget-section">
+          <div id="social-widget-section">
             <article class="social-widget">
               <h4><img src="images/grid.svg" class="social-widget-icon-img" alt="upload icon"> Link to this Job</h4>
               <p>Fleeing from the Cylon the Battlestar Galactica leads a rag-tag fugitive fleet on a lonely quest. </p>
-              <div class="widget-input-btn-div">
+              <div class="widget-input-btn-div" role="textarea">
                 <input class="social-widget-input" placeholder="http://loremipsum.com/sit.amet/123456/abc">
                 <button class="input-copy-btn">Copy</button>
               </div>
@@ -208,7 +312,7 @@
             <article class="social-widget">
               <h4><img src="images/widget-btn.svg" class="social-widget-icon-img" alt="widget icon"> Use the button Widget</h4>
               <p>This widget embeds the btns for sharing a job for submitting a resume on your website. </p>
-              <div class="widget-input-btn-div">
+              <div class="widget-input-btn-div" role="textarea">
                 <input class="social-widget-input" placeholder='<script src="main.js" type="text/javascript">' />
                 <button class="input-copy-btn">Copy</button>
               </div>
@@ -216,14 +320,13 @@
             <article class="social-widget">
               <h4><img src="images/upload.svg" class="social-widget-icon-img" alt="upload icon"> Upload Resumes by Email</h4>
               <p>You can automatically upload multiple resumes to this job by emailing the address below.</p>
-              <div class="widget-input-btn-div">
+              <div class="widget-input-btn-div" role="textarea">
                 <input class="social-widget-input social-widget-last-child-input" placeholder="linaStina@gmail.com">
               </div>
             </article>
-          </section>
+          </div><!--End Social Widget Section-->
         </section><!--End Social Section-->
       </section><!--End Resume & Social Media Section-->
     </main><!--End Main-->
-  </section><!--End Wrapper-->
 </body>
 </html>
