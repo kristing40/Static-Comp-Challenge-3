@@ -9,7 +9,6 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  border: 4px solid red;
   }
 
 /**STYLES TURNED OFF FOR MOBILE VIEW**/
@@ -26,7 +25,8 @@ body {
     display: none !important;
    }
 
-/**STYLES **/
+/**STYLES**/
+
   #mobile-view-nav {
     display: block;
    }
@@ -124,7 +124,6 @@ body {
   main {
     width: 100%;
     min-height: 100%;
-    border: 5px solid yellow;
    }
 
   #primary-nav {
@@ -167,15 +166,17 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-left: 40px;
+    padding-left: 32px;
     border-style: none;
    }
 
-  /*.search-img {
-      position: absolute;
-      top: 60px;
-      left: 5;
-    }*/
+  input[type='text'] {
+   background-image: url(images/search.svg);
+   background-size: 20px 20px;
+   background-repeat: no-repeat;
+   background-position: left;
+   margin-left: 5px;
+   }
 
   input[type='text'].nav-input-field::-webkit-input-placeholder {
     color: #c8cfd6;
@@ -220,7 +221,6 @@ body {
    }
 
   /** Job Title Sub Nav Section **/
-
 
   .job-title-oblong-btn,
   .job-title-section-sub-nav-btn {
@@ -324,7 +324,7 @@ body {
   }
 
   #circle-graph-and-txt {
-    width: 100%;
+    width: auto;
   }
 
   .circle-graphs-section {
@@ -369,10 +369,9 @@ body {
 
   .bar-graph-section {
     display: flex;
-    /*margin: 55px 40px 50px 30px;
-    padding-left: 65px;
+    margin: 55px 40px 50px 30px;
     justify-content: space-between;
-    align-content: space-between;*/
+    align-content: space-between;
   }
 
   .circle-graphs,
@@ -585,10 +584,9 @@ body {
   }
 
   .bar-graph-img {
-    /*width: 90%;*/
-    height: 165px;
     max-width: 600px;
     min-width: 200px;
+    height: 165px;
   }
 
   .x-sm-dot-icon {
@@ -612,10 +610,15 @@ body {
     margin-right: 4px;
   }
 
+  .search-img,
   .divider-icon {
     width: 20px;
     height: 20px;
-    vertical-align: middle;
+
+  }
+
+  .divider-icon {
+      vertical-align: middle;
   }
 
   .green-dot-icon {
@@ -656,7 +659,7 @@ body {
   }
 
   input[type='text'].nav-input-field::-webkit-input-placeholder {
-      font-size: 70%;
+    font-size: 70%;
   }
 
   #mobile-view-nav {
@@ -734,10 +737,6 @@ body {
     align-items: center;
   }
 
-  .bar-graph-img {
-    padding-bottom: 50px;
-  }
-
   #social-section {
     margin: 40px 40px 0 0;
   }
@@ -765,7 +764,7 @@ body {
 
 @media screen and (min-width: 1150px) {
   .nav7 {
-      display: inline-block !important;
+    display: inline-block !important;
   }
 
   .nav-more {
