@@ -3,18 +3,18 @@
     box-sizing: border-box;
   }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
+  body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
   }
 
 /**STYLES TURNED OFF FOR MOBILE VIEW**/
   aside {
-    display: none;
     background-color: #354052;
+    display: none;
   }
 
   .job-title-section-sub-nav {
@@ -23,67 +23,67 @@ body {
 
   .hidden-nav-btns {
     display: none !important;
-   }
+ }
 
 /**STYLES**/
 
   #mobile-view-nav {
     display: block;
-   }
+ }
 
   aside,
   figcaption {
     color: #b7c3d0;
-    }
+  }
 
   #avatar-section,
   .aside-category-links {
     border-bottom: 1px inset #1a2b4d;
-    }
+  }
 
   #avatar-link {
     padding-left: 3px;
-    }
+  }
 
   figure {
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 10px 0;
-    align-items: center;
-    }
+  }
 
   .aside-category-links {
     padding: 13px 0;
-    }
+  }
 
   .aside-category-links ul {
-    width: 200px;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    }
+    width: 200px;
+  }
 
   .aside-category-links li {
     display: block;
     padding: 8px 16px;
     text-decoration: none;
-    }
+  }
 
   .aside-category-links li:hover  {
-    border-left: 3px solid #0bb5ff;
     background-color: #42526c;
-   }
+    border-left: 3px solid #0bb5ff;
+ }
 
   .aside-category-links a {
+    color: #b7c3d0;
     padding-left: 10px;
     text-decoration: none;
-    color: #b7c3d0;
-   }
+  }
 
   .aside-reg-caps:hover,
   .aside-link:hover {
     color: #fff;
-   }
+  }
 
   /**FONT STYLING**/
 
@@ -91,7 +91,7 @@ body {
     font-size: 22px;
     font-weight: 400;
     margin: 0;
-    }
+  }
 
   h3 {
     color: #6b6b6b;
@@ -101,7 +101,7 @@ body {
     font-size: 80%;
     padding-top: 10px;
     text-align: center;
-    }
+  }
 
   .aside-link,
   .graph-btn-txt,
@@ -109,93 +109,92 @@ body {
   th,
   .resume-edit-btn {
     font-variant: small-caps;
-    }
+  }
 
   .aside-reg-caps {
     font-size: 80%;
-    }
+  }
 
   .aside-category-links h4 {
     font-size: 70%;
     padding-left: 25px;
-   }
+  }
 
   /** MAIN SECTION **/
   main {
-    width: 100%;
     min-height: 100%;
-   }
+    width: 100%;
+  }
 
   #primary-nav {
     display: flex;
     width: 100%;
     border-bottom: 1px inset #d7e4ea;
     flex-wrap: wrap;
-   }
+ }
 
   .all-primary-nav-boxes {
     border-right: 1px solid #d7e4ea;
-   }
+  }
 
   .all-primary-nav-boxes:hover .svg-hover,
   .all-four-job-title-nav-btns:hover .svg-hover {
     fill: #fff;
-   }
+ }
 
   .all-primary-nav-boxes:hover,
   .primary-nav-box3 {
     background-color: #0bb5ff;
-   }
+  }
 
   .primary-nav-box1,
   .primary-nav-box3,
   .primary-nav-box4,
   .primary-nav-box5 {
-    min-width: 45px;
+    max-height: 60px;
     max-width: 60px;
     min-height: 45px;
-    max-height: 60px;
-   }
+    min-width: 45px;
+  }
 
   .primary-nav-box2 {
-    min-width: 10%;
     flex: 2;
-   }
+    min-width: 10%;
+  }
 
   .nav-input-field {
-    position: relative;
+    border-style: none;
     width: 100%;
     height: 100%;
     padding-left: 32px;
-    border-style: none;
-   }
+    position: relative;
+  }
 
   input[type='text'] {
    background-image: url(images/search.svg);
+   background-position: left;
    background-size: 20px 20px;
    background-repeat: no-repeat;
-   background-position: left;
    margin-left: 5px;
-   }
+  }
 
   input[type='text'].nav-input-field::-webkit-input-placeholder {
     color: #c8cfd6;
-   }
+  }
 
 
   /** JOB TITLE SECTION **/
 
-
   #job-title-section {
     display: flex;
-    width: 100%;
     flex-flow: row wrap;
-   }
+    width: 100%;
+  }
 
   #job-title-section,
   #resume-social-media-section {
     border-bottom: 1px inset #d7e4ea;
-   }
+  }
 
   .job-title-header-section {
     display: flex;
@@ -236,15 +235,15 @@ body {
   }
 
   .job-title-oblong-btn {
-    width: 82px;
     padding: 7px;
     border-radius: 25px;
+    width: 82px;
   }
 
   .job-title-section-sub-nav-btn {
+    border-radius: 50%;
     height: 35px;
     width: 35px;
-    border-radius: 50%;
   }
 
   .job-title-section-sub-nav-btn svg {
@@ -254,29 +253,29 @@ body {
   /** JOB TITLE SECTION BOTTOM NAV **/
 
   .job-title-section-bottom-nav {
-    width: 93%;
     margin: 0 auto;
+    width: 93%;
   }
 
   .job-title-section-bottom-nav a {
+    color: #8c8c8c;
+    border-bottom: 4px solid #fff;
     display: inline-block;
     margin-right: 45px;
     padding: 0 0 15px;
-    color: #8c8c8c;
-    border-bottom: 4px solid #fff;
   }
 
   .job-title-section-bottom-nav a:hover {
-    color: #3d3d3d;
     border-bottom: 4px solid #007fff;
+    color: #3d3d3d;
   }
 
   /** DIVIDER IN MIDDLE OF PAGE **/
 
   .bottom-line-with-image-divider,
   .divider {
-    width: 100%;
     text-align: center;
+    width: 100%;
    }
 
   .divider {
@@ -286,14 +285,14 @@ body {
 
   .divider:before,
   .divider:after {
-    display: inline-block;
-    width: 45%;
-    height: 2px;
-    margin: 0 0 3px 0;
     content: ' ';
     background-color: #ababab;
+    display: inline-block;
+    height: 2px;
+    margin: 0 0 3px 0;
     text-shadow: none;
-   }
+    width: 45%;
+  }
 
   /** GRAPH SECTION **/
 
@@ -308,19 +307,19 @@ body {
    }
 
   .graph-btn-txt {
-    margin: 0 auto 50px auto;
     font-size: 85%;
     height: 25px;
-    text-align: center;
-    border-style: solid;
+    background-color: #fff;
     border-color: #d7e4ea;
     border-radius: 25px;
-    background-color: #fff;
+    border-style: solid;
+    margin: 0 auto 50px auto;
+    text-align: center;
   }
 
   .graph-btn-txt:hover {
-    color: #fff;
     background-color: #a9aaab;
+    color: #fff;
   }
 
   #circle-graph-and-txt {
@@ -329,20 +328,20 @@ body {
 
   .circle-graphs-section {
     display: flex;
-    padding: 50px 0;
     margin-left: 30px;
+    padding: 50px 0;
   }
 
   .circle-graphs {
-    height: 150px;
-    width: 150px;
-    margin: 10px;
     font-size: 22px;
-    line-height: 22px;
-    display: inline-block;
-    text-align: center;
+    height: 150px;
     border: 10px solid black;
     border-radius: 50%;
+    display: inline-block;
+    line-height: 22px;
+    margin: 10px;
+    text-align: center;
+    width: 150px;
   }
 
   .circle-graph-1 {
@@ -364,14 +363,13 @@ body {
   .in-circle-sm-txt {
     display: block;
     font-size: 70%;
-
   }
 
   .bar-graph-section {
-    display: flex;
-    margin: 55px 40px 50px 30px;
-    justify-content: space-between;
     align-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    margin: 55px 40px 50px 30px;
   }
 
   .circle-graphs,
@@ -382,16 +380,16 @@ body {
   /** RESUME SECTION **/
 
   table {
+    background-color: #fff;
+    border-collapse: collapse;
     margin: 40px;
     padding: 10px;
-    border-collapse: collapse;
-    background-color: #fff;
   }
 
   th {
+    color: #789;
     min-width: 170px;
     text-align: left;
-    color: #789;
   }
 
   thead,
@@ -407,15 +405,15 @@ body {
   }
 
   thead {
-    height: 44px;
     background-color: #789;
+    height: 44px;
   }
 
   tr {
     display: flex;
-    width: 90%;
     margin: 0 auto;
     padding: 31px 0;
+    width: 90%;
   }
 
   tr:not(:last-child) {
@@ -423,14 +421,14 @@ body {
   }
 
   .resume-edit-btn {
-    width: 70px;
+    background-color: #929fad;
+    border-radius: 5px;
+    border-style: none;
+    color: #fff;
     height: 30px;
     margin-top: -5px;
     vertical-align: top;
-    color: #fff;
-    border-style: none;
-    border-radius: 5px;
-    background-color: #929fad;
+    width: 70px;
   }
 
   .resume-edit-btn:hover {
@@ -442,16 +440,16 @@ body {
   }
 
   #social-section {
-    max-width: 90%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    max-width: 90%;
   }
 
   .social-media-btn,
   .social-widget-input {
-    width: 100%;
     height: 51px;
+    width: 100%;
   }
 
   .social-media-btn,
@@ -460,11 +458,11 @@ body {
   }
 
   .social-media-btn {
-    margin-bottom: 15px;
-    color: #fff;
-    background-repeat: no-repeat;
     background-position: 20px 50%;
+    background-repeat: no-repeat;
     background-size: 25px;
+    color: #fff;
+    margin-bottom: 15px;
   }
 
   .facebook {
@@ -498,17 +496,17 @@ body {
   .social-widget-input {
     font-size: 80%;
     overflow: hidden;
-    width: 100%;
     padding-left: 15px;
     text-align: center;
     white-space: nowrap;
     text-overflow: ellipsis;
+    width: 100%;
   }
 
   .social-widget {
-    width: 100%;
     padding: 7px;
     text-align: left;
+    width: 100%;
   }
 
   .social-widget p {
@@ -521,16 +519,16 @@ body {
   }
 
   .social-widget-last-child-input {
-    width: 100%;
     text-align: left;
+    width: 100%;
   }
 
   .input-copy-btn {
-    width: 25%;
+    background-color: #2faa96;
+    color: #fff;
     height: 48px;
     margin-top: 1px;
-    color: #fff;
-    background-color: #2faa96;
+    width: 25%;
   }
 
   .input-copy-btn:hover {
@@ -540,22 +538,22 @@ body {
   /** IMAGES AND ICONS **/
 
   .lg-avatar {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
+    height: 100px;
+    width: 100px;
   }
 
   .sm-avatar {
-    width: 55px;
-    height: 55px;
     border-radius: 50%;
+    height: 55px;
+    width: 55px;
   }
 
   .all-aside-icons {
-    width: 12px;
     height: 12px;
     margin-right: 8px;
     vertical-align: middle;
+    width: 12px;
   }
 
   .all-primary-nav-boxes svg {
@@ -568,15 +566,15 @@ body {
   }
 
   .blue-triangle-icon {
-    width: 8px;
     height: 8px;
     margin: 17px 0;
     transform: scaleX(-1);
+    width: 8px;
   }
 
   .mobile-nav-btn {
-    width: 40px;
     height: 40px;
+    width: 40px;
   }
 
   .mobile-nav-btn:hover {
@@ -584,26 +582,26 @@ body {
   }
 
   .bar-graph-img {
+    height: 165px;
     max-width: 600px;
     min-width: 200px;
-    height: 165px;
   }
 
   .x-sm-dot-icon {
-    width: 3px;
     height: 3px;
     margin: auto 3px 2px 3px;
+    width: 3px;
   }
 
   .x-sm-icon {
-    width: 10px;
     height: 10px;
+    width: 10px;
   }
 
   .sm-icon {
-    width: 14px;
     height: 14px;
     vertical-align: middle;
+    width: 14px;
   }
 
   .location-sm-icon {
@@ -612,30 +610,29 @@ body {
 
   .search-img,
   .divider-icon {
-    width: 20px;
     height: 20px;
-
+    width: 20px;
   }
 
   .divider-icon {
-      vertical-align: middle;
+    vertical-align: middle;
   }
 
   .green-dot-icon {
-    width: 8px;
     height: 8px;
     margin-right: 5px;
+    width: 8px;
   }
 
   .social-media-icon {
-    width: 30px;
     height: 30px;
+    width: 30px;
   }
 
   .social-widget-icon-img {
-    width: 13px;
     height: 13px;
     margin-right: 3px;
+    width: 13px;
   }
 
 /**MEDIA QUERIES**/
@@ -664,22 +661,22 @@ body {
 
   #mobile-view-nav {
     display: flex;
-    width: 450px;
     height: 50px;
+    justify-content: space-around;
     margin: 10px auto;
     padding: 10px;
-    justify-content: space-around;
+    width: 450px;
   }
 
   .job-title-header-section {
+    justify-content: space-around;
     margin: auto;
     padding-top: 20px;
-    justify-content: space-around;
   }
 
   .bar-graph-section {
-    margin: 0px auto 50px auto;
     justify-content: center;
+    margin: 0px auto 50px auto;
   }
 
   table {
@@ -705,9 +702,9 @@ body {
   }
 
   .job-title-section-bottom-nav {
+    justify-content: space-around;
     margin: auto;
     padding-top: 10px;
-    justify-content: space-around;
   }
 }
 
@@ -733,8 +730,9 @@ body {
   #graphs-section,
   #resume-social-media-section {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+
   }
 
   #social-section {
