@@ -662,7 +662,7 @@
   #mobile-view-nav {
     display: flex;
     height: 50px;
-    justify-content: space-around;
+    justify-content: space-around;;
     margin: 10px auto;
     padding: 10px;
     width: 450px;
@@ -749,7 +749,7 @@
   aside {
     display: block;
   }
-  
+
   .job-title-section-sub-nav {
     display: inline-block;
   }
