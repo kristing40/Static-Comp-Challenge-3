@@ -719,9 +719,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  aside {
-    display: block;
-  }
 
   .nav5 {
     display: none !important;
@@ -741,6 +738,7 @@
 }
 
 @media screen and (min-width: 865px) {
+
   .nav5 {
     display: inline-block !important;
   }
@@ -748,6 +746,10 @@
 }
 
 @media screen and (min-width: 900px) {
+  aside {
+    display: block;
+  }
+  
   .job-title-section-sub-nav {
     display: inline-block;
   }
