@@ -373,10 +373,8 @@
   }
 
   .bar-graph-section {
-    align-content: space-between;
     display: flex;
-    justify-content: space-between;
-    margin: 55px 40px 50px 30px;
+    margin: 55px -6px 50px 38px;
   }
 
   .circle-graphs,
