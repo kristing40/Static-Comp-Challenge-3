@@ -568,11 +568,12 @@
 
   .primary-nav-box1 svg {
     display: inline;
+    margin: 10px 0px 10px;
   }
 
   .blue-arrow-indicating-more {
     height: 8px;
-    margin: 17px 0;
+    margin: 17px 0 17px;
     transform: scaleX(-1);
     width: 8px;
   }
@@ -770,7 +771,7 @@
   aside {
     display: block;
   }
-  
+
   .nav7 {
     display: inline-block !important;
   }
