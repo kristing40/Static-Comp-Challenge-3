@@ -573,7 +573,7 @@
 
   .blue-arrow-indicating-more {
     height: 8px;
-    margin: 17px 0 17px;
+    margin:17px -3px 17px 6px;
     transform: scaleX(-1);
     width: 8px;
   }
