@@ -162,10 +162,10 @@
   .primary-nav-box3,
   .primary-nav-box4,
   .primary-nav-box5 {
-    max-height: 60px;
-    max-width: 60px;
-    min-height: 45px;
-    min-width: 45px;
+    max-height: 65px;
+    max-width: 65px;
+    min-height: 50px;
+    min-width: 50px;
   }
 
   .primary-nav-box2 {
@@ -568,11 +568,12 @@
 
   .primary-nav-box1 svg {
     display: inline;
+    margin: 10px 0px 10px;
   }
 
   .blue-arrow-indicating-more {
     height: 8px;
-    margin: 17px 0;
+    margin:17px -3px 17px 6px;
     transform: scaleX(-1);
     width: 8px;
   }
@@ -770,7 +771,7 @@
   aside {
     display: block;
   }
-  
+
   .nav7 {
     display: inline-block !important;
   }
