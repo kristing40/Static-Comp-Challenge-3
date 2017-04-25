@@ -57,9 +57,9 @@
   }
 
   .aside-category-links ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     width: 200px;
   }
 
@@ -198,21 +198,21 @@
 
   .job-title-header-section {
     display: flex;
-    width: 93%;
-    margin: 30px auto;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    margin: 30px auto;
+    width: 93%;
    }
 
   .job-title-location-para {
-    margin: 5px 0 0;
     font-size: 12px;
+    margin: 5px 0 0;
    }
 
   .job-title-location-blue-txt {
-    text-decoration: none;
     color: #63d1f4;
+    text-decoration: none;
    }
 
   .job-title-location-blue-txt:hover {
@@ -223,20 +223,20 @@
 
   .job-title-oblong-btn,
   .job-title-section-sub-nav-btn {
-    margin: 0 10px;
-    border-style: solid;
     background-color: #fff;
+    border-style: solid;
+    margin: 0 10px;
    }
 
   .job-title-oblong-btn:hover,
   .job-title-section-sub-nav-btn:hover {
-    color: #fff;
     background-color: #a9aaab;
+    color: #fff;
   }
 
   .job-title-oblong-btn {
-    padding: 7px;
     border-radius: 25px;
+    padding: 7px;
     width: 82px;
   }
 
@@ -285,8 +285,8 @@
 
   .divider:before,
   .divider:after {
-    content: ' ';
     background-color: #ababab;
+    content: ' ';
     display: inline-block;
     height: 2px;
     margin: 0 0 3px 0;
@@ -307,12 +307,12 @@
    }
 
   .graph-btn-txt {
-    font-size: 85%;
-    height: 25px;
     background-color: #fff;
     border-color: #d7e4ea;
     border-radius: 25px;
     border-style: solid;
+    font-size: 85%;
+    height: 25px;
     margin: 0 auto 50px auto;
     text-align: center;
   }
@@ -333,11 +333,11 @@
   }
 
   .circle-graphs {
-    font-size: 22px;
-    height: 150px;
     border: 10px solid black;
     border-radius: 50%;
     display: inline-block;
+    font-size: 22px;
+    height: 150px;
     line-height: 22px;
     margin: 10px;
     text-align: center;
@@ -442,7 +442,7 @@
   #social-section {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 40px auto;
     max-width: 90%;
   }
 
@@ -498,8 +498,8 @@
     overflow: hidden;
     padding-left: 15px;
     text-align: center;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    white-space: nowrap;
     width: 100%;
   }
 
@@ -565,7 +565,7 @@
     display: inline;
   }
 
-  .blue-triangle-icon {
+  .blue-arrow-indicating-more {
     height: 8px;
     margin: 17px 0;
     transform: scaleX(-1);
@@ -639,8 +639,8 @@
 
 @media screen and (max-width: 500px) {
   .circle-graphs-section {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
 
   .divider:before,
@@ -680,7 +680,8 @@
   }
 
   table {
-    margin: 24px;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .social-widget-input {
@@ -749,7 +750,7 @@
   aside {
     display: block;
   }
-  
+
   .job-title-section-sub-nav {
     display: inline-block;
   }
