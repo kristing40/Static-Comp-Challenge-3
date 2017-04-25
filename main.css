@@ -590,7 +590,8 @@
 
   .bar-graph-img {
     height: 165px;
-    width: width: 90%;
+    min-width: 350px;
+    width: 90%;
   }
 
   .x-sm-dot-icon {
